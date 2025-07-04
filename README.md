@@ -55,27 +55,27 @@ I designed the system architecture as follows:
 
 - **Final output**
 - 
-![final image](final.png)
+![final image](images/final.png)
 - 
 - **S3 + CloudFront Setup**
 - 
-![s3 Buckets image](s3.png)
+![s3 Buckets image](images/s3.png)
 - 
 - **API Gateway Route (POST /contact)**
 - 
-  [api route image](api.png)
+![api route image](images/api.png)
 - 
 - **Lambda Function Configuration**
 - 
-  [lambda image](lambda.png)
+![lambda image](images/lambda.png)
 -   
 - **Amazon SES Sending Confirmation**
 - 
-![ses image](mail)
+![ses image](images/mail)
 -   
 - **DynamoDB Table Records**
 - 
-![dynamodb image](dyanamodb.png)
+![dynamodb image](images/dyanamodb.png)
 - 
 
 ---
