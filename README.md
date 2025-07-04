@@ -2,8 +2,6 @@
 [![Made with ❤️ by Surya](https://img.shields.io/badge/Built%20By-Surya-blue)](https://github.com/BHARATSURYA1128)
 
 
-# 📬 Serverless Contact Form using AWS (Project 2)
-
 I created a fully-functional, scalable, and cost-effective **serverless contact form** and integrated it into my personal static website hosted on **Amazon S3 + CloudFront**. This contact form captures user input (Name, Email, Message), stores it securely in **DynamoDB**, and sends a formatted notification email directly to my inbox using **Amazon SES**. The entire communication and logic flow is handled through **API Gateway** and **AWS Lambda** — all configured by me under the AWS Free Tier.
 
 ---
