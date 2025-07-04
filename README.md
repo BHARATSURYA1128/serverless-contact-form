@@ -71,11 +71,11 @@ I designed the system architecture as follows:
 -   
 - **Amazon SES Sending Confirmation**
 - 
-![ses image](images/mail)
+![ses image](images/mail.png)
 -   
 - **DynamoDB Table Records**
 - 
-![dynamodb image](images/dyanamodb.png)
+![dynamodb image](images/dynamodb.png)
 - 
 
 ---
