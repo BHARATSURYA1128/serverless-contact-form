@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Surya Jithuga | Cloud & DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background-color: #0072ff;
+            border-radius: 2px;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        
+        .profile-img {
+            border: 5px solid white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-blue-600">Bharat Surya</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600 transition">Projects</a>
+            <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600 transition">Experience</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start">
+            <div class="md:w-2/3 text-center md:text-left mb-8 md:mb-0 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Bharat Surya Jithuga</h1>
+                <h2 class="text-xl md:text-2xl font-semibold mb-6">Cloud & DevOps Engineer | AWS Certified</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto md:mx-0">"Designing scalable cloud solutions, automating deployments, and driving CI/CD excellence."</p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+                    <a href="mailto:bharatsuryajithuga@gmail.com" class="flex items-center bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-full transition">
+                        <i class="fas fa-envelope mr-2"></i> bharatsuryajithuga@gmail.com
+                    </a>
+                    <a href="tel:+919912365274" class="flex items-center bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-full transition">
+                        <i class="fas fa-phone mr-2"></i> +91 9912365274
+                    </a>
+                </div>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-full font-semibold transition flex items-center">
+                        <i class="fas fa-download mr-2"></i> Download Resume
+                    </a>
+                    <a href="https://www.linkedin.com/in/bharat-surya-jithuga/" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-3 rounded-full transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/BHARATSURYA1128" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-3 rounded-full transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex justify-center -mt-4">
+                <div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-white bg-opacity-20 flex items-center justify-center overflow-hidden profile-img">
+                    <img src="my_image.jpeg" alt="Bharat Surya Jithuga" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-2/3 fade-in">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I'm an aspiring Cloud & DevOps Engineer with hands-on experience in building CI/CD pipelines, managing AWS infrastructure, and automating deployments using modern DevOps tools. I've completed remote internships and personal projects focused on real-world applications, showcasing skills in Terraform, Docker, Kubernetes, GitHub Actions, and AWS serverless services. I'm passionate about continuous learning, system reliability, and cloud-first architecture.
+                    </p>
+                </div>
+                <div class="md:w-1/3 flex justify-center fade-in">
+                    <div class="bg-blue-100 p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">Currently Learning</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fab fa-aws mr-3 text-blue-600"></i>
+                                <span>AWS CLI (Advanced usage)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-code-branch mr-3 text-blue-600"></i>
+                                <span>DevOps concepts & methodologies</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-python mr-3 text-blue-600"></i>
+                                <span>Python automation scripts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                <!-- Cloud & IaC -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fab fa-aws text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Cloud & IaC</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            AWS EC2, S3, Lambda, IAM, Route 53, CloudFormation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Terraform
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- CI/CD & Automation -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-robot text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">CI/CD & Automation</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Git, GitHub Actions, Jenkins
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Docker, Kubernetes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Bash, Python (basic)
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Monitoring & Logging -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Monitoring & Logging</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Prometheus, Grafana
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            AWS CloudWatch
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-tools text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Tools & Platforms</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Linux/Unix
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            GitHub, VS Code
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                            Agile Methodologies
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-server text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Silent Scraper – Real-Time AWS Serverless Pipeline</h3>
+                    </div>
+                    <div class="text-sm text-gray-500 mb-4">Jan '25 – Mar '25</div>
+                    <p class="text-gray-700 mb-4">
+                        Built a serverless real-time data processing pipeline using AWS services. Used Lambda for compute, SQS for message queuing, SNS for notifications, and integrated CloudWatch for alerts and monitoring.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS Lambda</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SQS</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">SNS</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CloudWatch</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md card-hover transition duration-300 fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 text-white p-3 rounded-lg mr-4">
+                            <i class="fas fa-globe text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">AWS Smart Static Website</h3>
+                    </div>
+                    <div class="text-sm text-gray-500 mb-4">Sep '24 – Dec '24</div>
+                    <p class="text-gray-700 mb-4">
+                        Hosted a globally accessible static website. Automated deployment pipeline via GitHub Actions and achieved high availability with CloudFront + DNS routing.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AWS S3</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CloudFront</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Route 53</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GitHub Actions</span>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            <i class="fab fa-github mr-2"></i> View Code
+                        </a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Experience</h2>
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="relative pl-8 timeline-item fade-in">
+                    <div class="absolute left-0 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-semibold">DevOps Intern – Virtual Internship</h3>
+                            <div class="text-blue-600 font-medium">Apr '25 – Jun '26</div>
+                        </div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Built and maintained CI/CD pipelines using GitHub Actions and Jenkins</li>
+                            <li>Containerized apps using Docker, deployed on Kubernetes</li>
+                            <li>Provisioned AWS infra with Terraform, cutting manual time by 25%</li>
+                            <li>Configured Grafana dashboards with Prometheus for metrics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="relative pl-8 timeline-item fade-in">
+                    <div class="absolute left-0 top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                            <h3 class="text-xl font-semibold">AWS Cloud Intern – AICTE Virtual Internship</h3>
+                            <div class="text-blue-600 font-medium">Apr '25 – Jun '25</div>
+                        </div>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                            <li>Deployed EC2, S3, and Lambda-based solutions</li>
+                            <li>Automated provisioning using AWS CloudFormation</li>
+                            <li>Collaborated with team in documenting deployment best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Certification 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md flex items-center card-hover transition duration-300 fade-in">
+                    <div class="bg-blue-100 p-4 rounded-lg mr-4">
+                        <i class="fab fa-aws text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">AWS Cloud Practitioner (Cloud Quest)</h3>
+                        <p class="text-sm text-gray-500">May 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certification 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md flex items-center card-hover transition duration-300 fade-in">
+                    <div class="bg-blue-100 p-4 rounded-lg mr-4">
+                        <i class="fas fa-archway text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">AWS Academy Cloud Architect Badge</h3>
+                        <p class="text-sm text-gray-500">May 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certification 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md flex items-center card-hover transition duration-300 fade-in">
+                    <div class="bg-blue-100 p-4 rounded-lg mr-4">
+                        <i class="fas fa-cloud text-blue-600 text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">AWS Cloud Foundations Badge</h3>
+                        <p class="text-sm text-gray-500">May 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Education 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">B.Tech in Computer Science (AI & ML)</h3>
+                            <p class="text-gray-600">Vishnu Institute of Technology, Bhimavaram</p>
+                            <p class="text-sm text-gray-500">Jul '22 – Jun '26</p>
+                        </div>
+                    </div>
+                    <div class="pl-14">
+                        <p class="text-gray-700 mb-2">Courses:</p>
+                        <ul class="list-disc pl-5 text-gray-600">
+                            <li>Cloud Computing</li>
+                            <li>DevOps</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Diploma in Computer Science & Engineering</h3>
+                            <p class="text-gray-600">Andhra Polytechnic, Kakinada</p>
+                            <p class="text-sm text-gray-500">Jul '20 – Aug '23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <i class="fas fa-quote-left text-4xl opacity-20 mb-6"></i>
+            <blockquote class="text-xl md:text-2xl font-medium mb-6">
+                "Cloud engineering is not just about deploying systems; it's about making them resilient, scalable, and automated."
+            </blockquote>
+            <div class="w-16 h-1 bg-white bg-opacity-50 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 section-title fade-in">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2 fade-in">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Email</p>
+                                <a href="mailto:bharatsuryajithuga@gmail.com" class="text-blue-600 hover:underline">bharatsuryajithuga@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Phone</p>
+                                <a href="tel:+919912365274" class="text-blue-600 hover:underline">+91 9912365274</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fab fa-linkedin-in text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/bharat-surya-jithuga/" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/bharat-jithuga</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fab fa-github text-blue-600"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">GitHub</p>
+                                <a href="https://github.com/BHARATSURYA1128" target="_blank" class="text-blue-600 hover:underline">github.com/BHARATSURYA1128</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 fade-in">
+                    <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-status" class="mt-4 text-sm"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2025 Bharat Surya Jithuga. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/bharat-jithuga" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/BHARATSURYA1128" target="_blank" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="mailto:bharatsuryajithuga@gmail.com" class="text-gray-400 hover:text-white transition">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact form submission
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Add fade-in effect when scrolling
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(element => {
+            element.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+            fadeInObserver.observe(element);
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            const statusDiv = document.getElementById("form-status");
+
+            statusDiv.textContent = "⏳ Sending message...";
+            statusDiv.style.color = "gray";
+
+            try {
+                fetch('https://fpvm8etrqj.execute-api.ap-south-1.amazonaws.com/prod/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message }),
+                })
+                .then(response => {
+                    if (!response.ok) throw new Error("Network response was not ok");
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById("form-status").textContent = "✅ Message sent successfully!";
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                    document.getElementById("form-status").textContent = "❌ Network error. Please check your connection.";
+                });
+
+            } catch (error) {
+                console.error("❌ Network error:", error);
+                statusDiv.textContent = "❌ Network error. Please check your connection.";
+                statusDiv.style.color = "red";
+            }
+        });
+    </script>
+</body>
+</html>
