@@ -53,14 +53,30 @@ I designed the system architecture as follows:
 
 ## 🖼️ Screenshots
 
-> _(Update with your hosted image links later)_  
-You can upload screenshots to your GitHub `assets` folder and link them below.
-
-- **S3 + CloudFront Setup**  
-- **API Gateway Route (POST /contact)**  
-- **Lambda Function Configuration**  
-- **Amazon SES Sending Confirmation**  
+- **Final output**
+- 
+![final image](final.png)
+- 
+- **S3 + CloudFront Setup**
+- 
+![s3 Buckets image](s3.png)
+- 
+- **API Gateway Route (POST /contact)**
+- 
+  [api route image](api.png)
+- 
+- **Lambda Function Configuration**
+- 
+  [lambda image](lambda.png)
+-   
+- **Amazon SES Sending Confirmation**
+- 
+![ses image](mail)
+-   
 - **DynamoDB Table Records**
+- 
+![dynamodb image](dyanamodb.png)
+- 
 
 ---
 
