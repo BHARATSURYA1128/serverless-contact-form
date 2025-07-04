@@ -20,6 +20,8 @@ I designed the system architecture as follows:
    └──> [Amazon DynamoDB - Stores Data]
 ```
 
+![Architecture Diagram](architecture.png)
+
 > This is a completely serverless, cost-efficient, and globally available solution.
 
 ---
